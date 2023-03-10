@@ -1,0 +1,9 @@
+root = true # Esse dado informa que essa é a configuração mais importante caso tenhamos outros arquivos
+
+[*] # Para dizer que essa formatação é para todos os arquivos
+indent_style = space # Para informa qual o tipo de indentação nesse caso o espaço
+indent_size = 2 # Para informar o tamanho da indentação
+end_of_line = lf # Formação do final da linha
+charset = utf-8 # Para setar o encoding do código
+trim_trailing_whitespace = true # Essa configuração nos obriga a colocar um espaço depois de simbolos (, )
+insert_final_newline = true # Para colocar ao final do arquivo uma linha em branco
