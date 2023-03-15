@@ -3,7 +3,11 @@ import Paragrafo from '../../components/Paragrafo'
 import Titulo from '../../components/Titulo'
 import { Descricao, BotaoTema, SidebarContainer } from './styles'
 
-const Sidebar = () => (
+type Props = {
+  trocaTema: () => void
+}
+
+const Sidebar = (props: Props) => (
   <aside>
     <SidebarContainer>
       <Avatar />
@@ -15,7 +19,7 @@ const Sidebar = () => (
         Desenvolvedor Full Stack ASP.NET Core Junior | Javascript | NodeJs | C#
         .NET/ASP.NET | HTML | CSS
       </Descricao>
-      <BotaoTema>Trocar Tema</BotaoTema>
+      <BotaoTema onClick={props.trocaTema}>Trocar Tema</BotaoTema>
     </SidebarContainer>
   </aside>
 )
